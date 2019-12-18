@@ -1,28 +1,41 @@
 {
-  "name": "iber",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "juleju",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
   "dependencies": {
-    "koa": "^2.7.0",
-    "koa-body": "^4.1.0",
-    "koa-cors": "0.0.16",
-    "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0",
-    "mongodb": "^3.3.2",
-    "mongoose": "^5.5.12",
-    "ms": "^2.1.2",
-    "redis": "^2.8.0",
-    "request": "^2.88.0",
-    "uuid": "^3.3.2"
+    "core-js": "^3.4.3",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "crypto-js": "^3.1.9-1",
-    "mysql": "^2.17.1"
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
   },
-  "author": "",
-  "license": "ISC"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
